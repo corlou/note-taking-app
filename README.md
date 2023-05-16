@@ -1,6 +1,6 @@
-General Plan
-Note taking app
-store notes in local storage
+# General Plan
+
+Note taking app store notes in local storage
 notes stored as array of objects, like the blog posts
 useContext for global access to notes
 useReducer for complex access to notes
@@ -20,7 +20,9 @@ isCompleted (boolean)
 due date (JS Date)
 created at date (JS Date)
 Development Plan
-Plan:
+
+# Plan:
+
 routing:
 
 useParams for routes to do things with/to specific notes
