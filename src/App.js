@@ -1,5 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import './App.css';
 
 function App() {
   return (
@@ -16,7 +15,6 @@ function App() {
         <Route path="/notes/filter/done" element={<h1>TODO</h1>} />
 
       </Routes>
-
     </div>
   );
 }

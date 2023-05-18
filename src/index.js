@@ -4,12 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
+import NotesProvider from './contexts/NotesContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      {/* App as parent to Notes = App has no access to Notes data */}
+      {/* <App>
+		<NotesProvider /> 
+	</App> */}
+      <NotesProvider>
+        <App />
+      </NotesProvider>
     </BrowserRouter>
 
   </React.StrictMode>
