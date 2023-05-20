@@ -1,26 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import NotesProvider from './contexts/NotesContext';
 
 
+
+
 // Index.js = config & startup stuff about the ReactJS project 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      {/* App as parent to Notes = App has no access to Notes data */}
-      {/* <App>
+	<BrowserRouter>
+	{/* App as parent to Notes = App has no access to Notes data */}
+	{/* <App>
 		<NotesProvider /> 
 	</App> */}
-      <NotesProvider>
-        <App />
-      </NotesProvider>
-    </BrowserRouter>
-
+		<NotesProvider>
+			<App />
+		</NotesProvider>	
+	</BrowserRouter>
+    
   </React.StrictMode>
 );
 
